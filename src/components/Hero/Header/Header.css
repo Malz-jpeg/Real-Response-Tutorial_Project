@@ -6,10 +6,28 @@
 .h-container{
     justify-content: space-between;
     padding-top: 1rem;
-    paading-bottom: 1rem;
+    padding-bottom: 1rem;
     color: var(--secondary)
 
 }
+
+/* left side */
+.hero-left{
+    gap: 3rm;
+}
+
+.hero-title{
+    position: relative;
+    z-index: 1;
+}
+
+.hero-title>h1{
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 4rem;
+}
+
+/* right side */ 
 
 
 .h-menu{
