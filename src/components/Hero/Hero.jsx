@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css';
+import {HiLocationMarker} from 'react-icons/hi'
 
 const Hero = () => {
   return (
@@ -8,12 +9,12 @@ const Hero = () => {
         
         {/* Left section */}
         <div className="flexColStart hero-left">
-          <div className="hero-title">
-            <div className="orange-circle"/>
-            <h1>
-              Discover<br/> Most Suitable<br/> Property
-            </h1>
-          </div>
+        <div className="hero-title">
+    <div className="orange-circle"></div>
+    <h1>
+        Discover<br /> Most Suitable<br /> Property
+    </h1>
+</div>
 
           <div className="flexColStart hero-des">
             <span>Find a variety of properties that suit you very easily</span>
@@ -21,7 +22,9 @@ const Hero = () => {
           </div>
 
           <div className="search-bar">
-            Search Bar
+            <HiLocationMarker colors="var{--blue}" size={25}/>
+            <input type="text"/>
+            <button className="button">Search</button>
           </div>
         </div>
 
