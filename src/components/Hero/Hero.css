@@ -47,6 +47,22 @@
     outline: none;
 }
 
+.stats{
+    width:100%;
+    justify-content: space-between
+}
+
+.stats>:nth-child(1)
+{
+    display: flex;
+    font-size:  5rem;
+    margin-top: 1.5rem;
+}
+.stats>:nth-child(1)>:last-child{
+    color: orange;
+}
+
+
 /* right side */
 
 .image-container{
