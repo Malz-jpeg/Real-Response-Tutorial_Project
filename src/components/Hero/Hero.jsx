@@ -29,13 +29,14 @@ const Hero = () => {
 						<button className="button">Search</button>
 					</div>
 
+
 					<div className="flexCenter stats">
 						<div className="flexColStart stat">
 							<span>
 								<CountUp start={88000} end={90000} duration={4} />
 								<span>+</span>
 							</span>
-							<span>Premium Products</span>
+							<span class="secondaryText">Premium Products</span>
 						</div>
 
 						<div className="flexColStart stat">
@@ -43,7 +44,7 @@ const Hero = () => {
 								<CountUp start={1950} end={2000} duration={4} />
 								<span>+</span>
 							</span>
-							<span>Happy Customers</span>
+							<span class="secondaryText">Happy Customers</span>
 						</div>
 
 						<div className="flexColStart stat">
@@ -51,16 +52,20 @@ const Hero = () => {
 								<CountUp end={28} duration={4} />
 								<span>+</span>
 							</span>
-							<span>Award Winning</span>
+							<span class="secondaryText">Award Winning</span>
 						</div>
+
 					</div>
+
 				</div>
+
 				{/* Right section */}
 				<div className="flexCenter hero-right">
 					<div className="image-container">
 						<img src="./hero-image.png" alt="Property" />
 					</div>
 				</div>
+
 			</div>
 		</section>
 	);

@@ -96,13 +96,13 @@
     justify-content: space-between
 }
 
-.stats>:nth-child(1)
+.stat>:nth-child(1)
 {
     display: flex;
     font-size:  2rem;
     margin-top: 1.5rem;
 }
-.stats>:nth-child(1)>:last-child{
+.stat>:nth-child(1)>:last-child{
     color: orange;
 }
 
