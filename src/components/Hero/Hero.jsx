@@ -35,7 +35,7 @@ const Hero = () => {
                 <CountUp start={88000} end={90000} duration={4} />
               </span>
               <span>+</span>
-              <span>Premium Products</span>
+              <span className="secondaryText">Premium Products</span>
             </div>
             <div className="flexColStart stat">
               <span>
