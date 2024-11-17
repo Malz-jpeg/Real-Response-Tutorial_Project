@@ -55,7 +55,7 @@
 .stats>:nth-child(1)
 {
     display: flex;
-    font-size:  5rem;
+    font-size:  2rem;
     margin-top: 1.5rem;
 }
 .stats>:nth-child(1)>:last-child{
