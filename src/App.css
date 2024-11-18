@@ -1,0 +1,15 @@
+.App{
+    position: relative;
+    overflow-x: clip;
+
+}
+.App>:nth-child(1)
+{
+    background: var(--black);
+    position: relative;
+}
+.white-gradient{
+    position:absolute
+    w20rem
+
+}
