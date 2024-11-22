@@ -12,6 +12,7 @@
 
 /* left side */
 .hero-left{
+    position: relative;
     gap: 3rm;
 }
 
