@@ -14,11 +14,11 @@ const Residencies = () => {
         </div>
 
         <Swiper>
-          {data.map((card, i) => (
+          {
+          data.map((card, i) => (
             <SwiperSlide key={i}>
               <div className="flexColStart r-card">
                 <img src={card.image} alt="home" />
-                <span className="secondaryText r-price">{card.price}</span>
 
                 <span className="secondaryText r-price">
                   <span style={{color:"orange"}}>$</span>
