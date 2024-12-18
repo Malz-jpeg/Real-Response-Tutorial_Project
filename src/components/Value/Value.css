@@ -1,0 +1,18 @@
+.v-container {
+    display: flex; /* Align items horizontally */
+    flex-direction: row; /* Ensure items are in a row */
+    align-items: center; /* Vertically center the content */
+    gap: 2rem; /* Space between the image and text */
+}
+
+.v-left .image-container {
+    border: 8px solid rgba(232, 232, 232, 0.93);
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    overflow: hidden;
+}
+
+.v-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
