@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
     Accordion,
     AccordionItem,
@@ -16,13 +16,13 @@ const Value = () => {
     return (
         <section className="v-wrapper">
             <div className="paddings innerWidth FlexCenter v-container">
-                {/* left side */}
+                {/* Left Side */}
                 <div className="v-left">
                     <div className="image-container">
-                        <img src="./value.png" alt="" />
+                        <img src="./value.png" alt="Building" />
                     </div>
                 </div>
-                {/* right side */}
+                {/* Right Side */}
                 <div className="flexColStart v-right">
                     <span className="orangeText">Our Value</span>
                     <span className="primaryText">Value We Give to You</span>
@@ -38,7 +38,11 @@ const Value = () => {
                         preExpanded={['0']} // Expand the first item by default
                     >
                         {data.map((item) => (
-                            <AccordionItem key={item.id} className="accordionItem" uuid={item.id}>
+                            <AccordionItem
+                                key={item.id}
+                                className={`accordionItem ${item.id === '0' ? 'expanded' : ''}`}
+                                uuid={item.id}
+                            >
                                 <AccordionItemHeading>
                                     <AccordionItemState>
                                         {({ expanded }) => (
@@ -69,4 +73,5 @@ const Value = () => {
 };
 
 export default Value;
+
 

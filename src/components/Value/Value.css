@@ -2,19 +2,37 @@
     display: flex; /* Align items horizontally */
     flex-direction: row; /* Ensure items are in a row */
     align-items: center; /* Vertically center the content */
-    gap: 13rem; /* Space between the image and text */
+    gap: 10rem; /* Adjust spacing between the image and text */
 }
 
 .v-left .image-container {
     border: 8px solid rgba(232, 232, 232, 0.93);
-    border-radius: 50px; /* Optional: Adds rounded corners */
+    border-radius: 50px; /* Rounded corners for the image */
     overflow: hidden;
+    box-shadow: var(--shadow); /* Add shadow for a modern design */
 }
 
 .v-right {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
+}
+
+.orangeText {
+    color: orange;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.primaryText {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.secondaryText {
+    font-size: 1rem;
+    color: gray;
+    line-height: 1.5;
 }
 
 .accordion {
@@ -28,19 +46,24 @@
     border-radius: 8px;
     overflow: hidden;
     margin-bottom: 20px;
+    transition: all 0.3s ease;
 }
-.accordionItem.expanded{
-    bx-shadow: var(--shadow);
-    boder-radius: 6px;
+
+.accordionItem.expanded {
+    box-shadow: var(--shadow);
+    border-radius: 8px;
 }
 
 .accordionButton {
-    display: flex; 
+    display: flex;
     background: white;
     padding: 1rem;
     width: 100%;
     justify-content: space-between;
     cursor: pointer;
+    align-items: center;
+    border: none;
+    outline: none;
 }
 
 .icon {
@@ -50,9 +73,21 @@
 }
 
 .icon svg {
-    fill: var(--blue); 
+    fill: var(--blue);
 }
 
 .accordionButton .primaryText {
     font-size: 1.1rem;
 }
+
+.accordionButton.expand .primaryText {
+    color: var(--shadow);
+    border-radius: 6px;
+}
+
+.accordionItemPanel {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: gray;
+}
+
