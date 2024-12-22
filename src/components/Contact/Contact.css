@@ -1,48 +1,93 @@
-.c-container{
-    justify-content:space-between;
-
+.c-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
-.c-container>div{
-    flex:1
+.c-container > div {
+    flex: 1;
 }
 
-.c-right{
-    width: 100px;
+.c-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.c-left{
-    gap: 0.5rem;
-}
-.contact{
-    margin-top: 2rem;
-    gap: 1rem;   
-}
-
-.contactModes .row{
+.c-left {
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
 }
 
-.mode{
+.contact {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contactModes .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.mode {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
     width: 16rem;
     padding: 1rem;
-    border: 0.8px solid rgba(128, 128, 128, 0.143)
-    bodrer-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 10px;
     gap: 1rem;
-    transition: all 300ms ease-in;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.mode .button{
-    width: 100%
+
+.mode .button {
+    width: 100%;
     background: var(--lightBlue);
     color: var(--blue);
     font-size: 0.9rem;
     font-weight: 600;
-
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.mode >:nth-child(1)
-{
+.mode > :nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     width: 100%;
-    gap: 1.6rem;
-    
+}
+
+.mode .details .primaryText {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.mode:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.mode .button:hover {
+    background: var(--blue-gradient);
+    color: white;
+    transform: scale(1.02);
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
 }

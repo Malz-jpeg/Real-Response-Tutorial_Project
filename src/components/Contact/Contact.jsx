@@ -8,35 +8,77 @@ const Contact = () => {
   return (
     <section className="c-wrapper">
       <div className="paddings innerWidth flexCentre c-container">
-        {/* left side */}
+        {/* Left side */}
         <div className="flexColStart c-left">
-          <span className="orangeText">Our Contacts</span>
-          <span className="primaryText">Easy to Contact Us</span>
+          <span className="orangeText">Our Contact Us</span>
+          <span className="primaryText">Easy to contact us</span>
           <span className="secondaryText">
             We are always ready to help by providing the best services for you. 
             We believe a good place to live can make your life better.
           </span>
 
           <div className="flexColStart contactModes">
-            {/* first row */}
-            <div className="flexColStart row">
+            {/* First row */}
+            <div className="flexRow row">
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
-                    <MdCall size={25} />
+                    <MdCall size={25} color="var(--blue)" />
+                  </div>
+                  <div className="flexColStart details">
+                    <span className="primaryText">Call</span>
+                    <span className="secondaryText">021 123 145 14</span>
                   </div>
                 </div>
-                <div className="flexColStart details">
-                  <span>Call</span>
-                  <span>021 123 145 14</span>
-                </div>
+                <div className="button">Call now</div>
               </div>
-              <div className="flexCenter button">Call Now</div>
+
+              <div className="flexColCenter mode">
+                <div className="flexStart">
+                  <div className="flexCenter icon">
+                    <BsFillChatDotsFill size={25} color="var(--blue)" />
+                  </div>
+                  <div className="flexColStart details">
+                    <span className="primaryText">Chat</span>
+                    <span className="secondaryText">021 123 145 14</span>
+                  </div>
+                </div>
+                <div className="button">Chat now</div>
+              </div>
+            </div>
+
+            {/* Second row */}
+            <div className="flexRow row">
+              <div className="flexColCenter mode">
+                <div className="flexStart">
+                  <div className="flexCenter icon">
+                    <BsFillChatDotsFill size={25} color="var(--blue)" />
+                  </div>
+                  <div className="flexColStart details">
+                    <span className="primaryText">Video Call</span>
+                    <span className="secondaryText">021 123 145 14</span>
+                  </div>
+                </div>
+                <div className="button">Video Call now</div>
+              </div>
+
+              <div className="flexColCenter mode">
+                <div className="flexStart">
+                  <div className="flexCenter icon">
+                    <HiChatBubbleBottomCenter size={25} color="var(--blue)" />
+                  </div>
+                  <div className="flexColStart details">
+                    <span className="primaryText">Message</span>
+                    <span className="secondaryText">021 123 145 14</span>
+                  </div>
+                </div>
+                <div className="button">Message now</div>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* right side */}
+        {/* Right side */}
         <div className="c-right">
           <div className="image-container">
             <img src="./contact.jpg" alt="Contact" />
