@@ -29,7 +29,6 @@ const Hero = () => {
 						<button className="button">Search</button>
 					</div>
 
-
 					<div className="flexCenter stats">
 						<div className="flexColStart stat">
 							<span>
