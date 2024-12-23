@@ -1,6 +1,7 @@
 .App{
     position: relative;
     overflow-x: clip;
+    background-color: white;
 
 }
 .App>:nth-child(1)
@@ -14,6 +15,6 @@
     height: 20rem;
     background: rgba(255, 255, 255, 0.522);
     filter: blur(100px);
-    z-index: 2;
+    z-index: 1;
 
 }
