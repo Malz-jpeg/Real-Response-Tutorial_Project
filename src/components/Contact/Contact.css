@@ -91,3 +91,18 @@
     border-radius: 20px;
     object-fit: cover;
 }
+
+@media (max-width: 1024px) {
+    .c-container{
+        flex-direction: column;
+    }
+    .c-right{
+        justify-content: center;
+    }
+    .contactModes{
+        width: 100%;
+    }
+    .mode{
+        width: 100%;
+    }
+}

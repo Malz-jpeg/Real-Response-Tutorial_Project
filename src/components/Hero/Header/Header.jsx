@@ -1,15 +1,10 @@
-import React, { useState } from "react";
-import "./Header.css";
-import { BiMenuAltRight } from "react-icons/bi";
-import OutsideClickHandler from "react-outside-click-handler";
-
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
 
   const getMyStyles = (menuOpened) => {
     return window.innerWidth <= 800
       ? { right: menuOpened ? "0" : "-100%" }
-      : {};
+      : { right: "0" }; // Ensure the menu is visible for larger screens
   };
 
   return (
@@ -37,5 +32,3 @@ const Header = () => {
     </section>
   );
 };
-
-export default Header;
