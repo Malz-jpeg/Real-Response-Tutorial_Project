@@ -1,3 +1,9 @@
+import React, { useState } from "react";
+import "./Header.css";
+import { BiMenuAltRight } from "react-icons/bi";
+import OutsideClickHandler from "react-outside-click-handler";
+
+
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
 
@@ -32,3 +38,5 @@ const Header = () => {
     </section>
   );
 };
+
+export default Header;
