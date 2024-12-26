@@ -10,7 +10,7 @@ const Header = () => {
   const getMyStyles = (menuOpened) => {
     return window.innerWidth <= 800
       ? { right: menuOpened ? "0" : "-100%" }
-      : { right: "0" }; // Ensure the menu is visible for larger screens
+      : {}; // Ensure the menu is visible for larger screens
   };
 
   return (
@@ -18,7 +18,7 @@ const Header = () => {
       <div className="flexCenter paddings innerWidth h-container">
         <img src="/logo.png" alt="logo" width={100} />
 
-        <OutsideClickHandler onOutsideClick={setMenuOpened.bind(null, false)}>
+        <OutsideClickHandler onOutsideClick={() => setMenuOpened(false)}>
           <div
             className="flexCenter h-menu"
             style={getMyStyles(menuOpened)}

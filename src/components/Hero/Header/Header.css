@@ -1,6 +1,8 @@
 .h-wrapper {
     color: white;
     z-index: 99;
+    background: var(--black); /* Add background color for better contrast */
+    position: relative;
 }
 
 .h-container {
@@ -8,6 +10,8 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: var(--secondary);
+    display: flex;
+    align-items: center;
 }
 
 /* Right side */
@@ -28,21 +32,60 @@
     z-index: 99;
 }
 
+.h-menu > a,
+.h-menu > button {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.h-menu > button {
+    padding: 0.5rem 1rem;
+    background: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .h-menu > *:hover {
     cursor: pointer;
+    opacity: 0.8;
 }
 
 .menu-icon {
     display: none;
     z-index: 100;
+    cursor: pointer;
+    color: white;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
     .menu-icon {
         display: block;
     }
     .h-menu {
         color: var(--black);
-        right: 4rem;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 769px) {
+    .h-menu {
+        position: static;
+        flex-direction: row;
+        background: transparent;
+        box-shadow: none;
+        gap: 2rem;
+        padding: 0;
+        align-items: center;
+    }
+
+    .h-menu > a,
+    .h-menu > button {
+        color: white;
     }
 }

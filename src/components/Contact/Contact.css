@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .c-container > div {
@@ -62,27 +63,9 @@
     transition: all 0.3s ease;
 }
 
-.mode > :nth-child(1) {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-}
-
-.mode .details .primaryText {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
 .mode:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
-
-.mode .button:hover {
-    background: var(--blue-gradient);
-    color: white;
-    transform: scale(1.02);
 }
 
 .image-container img {
@@ -93,16 +76,26 @@
 }
 
 @media (max-width: 1024px) {
-    .c-container{
+    .c-container {
         flex-direction: column;
     }
-    .c-right{
+    .c-right {
         justify-content: center;
     }
-    .contactModes{
+    .contactModes {
         width: 100%;
     }
-    .mode{
+    .mode {
         width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .c-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .c-right {
+        margin-top: 2rem;
     }
 }
